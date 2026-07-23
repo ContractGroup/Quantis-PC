@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download Quantis for Windows</title>
+    <meta
+      name="description"
+      content="Download the Quantis desktop app for Windows. The complete platform for UK contractors: estimating, takeoff, quantity surveying and project delivery in one place."
+    />
+    <meta name="theme-color" content="#5d147c" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#7d1a9c" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <meta property="og:title" content="Download Quantis for Windows" />
+    <meta property="og:description" content="The complete platform for UK contractors, on your desktop." />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --bg: #f5f3f8;
+        --glow: rgba(125, 26, 156, 0.14);
+        --surface: #ffffff;
+        --surface-2: #faf8fc;
+        --border: rgba(28, 12, 40, 0.1);
+        --text: #191223;
+        --muted: #6c6577;
+        --brand-solid: #5d147c;
+        --brand-a: #6f1791;
+        --brand-b: #8a1fae;
+        --on-brand: #ffffff;
+        --ring: rgba(125, 26, 156, 0.45);
+        --shadow: 0 18px 46px -18px rgba(48, 12, 66, 0.35);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c0910;
+          --glow: rgba(150, 74, 214, 0.22);
+          --surface: #16121e;
+          --surface-2: #1b1626;
+          --border: rgba(255, 255, 255, 0.1);
+          --text: #f2ecf8;
+          --muted: #a79fb4;
+          --brand-solid: #7d1a9c;
+          --brand-a: #8a27b0;
+          --brand-b: #a94fce;
+          --on-brand: #ffffff;
+          --ring: rgba(181, 121, 255, 0.5);
+          --shadow: 0 24px 60px -22px rgba(0, 0, 0, 0.7);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        background-color: var(--bg);
+        background-image: radial-gradient(
+          120% 90% at 50% -10%,
+          var(--glow) 0%,
+          transparent 60%
+        );
+        color: var(--text);
+        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          Arial, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      main {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 72px 24px 48px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        width: 84px;
+        height: 84px;
+        margin-bottom: 26px;
+        filter: drop-shadow(0 8px 20px rgba(93, 20, 124, 0.28));
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 2.6rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        margin: 0 0 14px;
+      }
+
+      .tagline {
+        font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+        line-height: 1.5;
+        color: var(--text);
+        margin: 0 0 6px;
+        font-weight: 500;
+      }
+
+      .disciplines {
+        font-size: 0.98rem;
+        line-height: 1.55;
+        color: var(--muted);
+        margin: 0 auto 34px;
+        max-width: 34rem;
+      }
+
+      .panel {
+        width: 100%;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        padding: 30px 28px 26px;
+      }
+
+      .download {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 340px;
+        padding: 16px 28px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, var(--brand-b), var(--brand-a));
+        color: var(--on-brand);
+        font-size: 1.08rem;
+        font-weight: 650;
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        box-shadow: 0 10px 22px -8px rgba(93, 20, 124, 0.6);
+        transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      }
+
+      .download:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 28px -8px rgba(93, 20, 124, 0.7);
+        filter: brightness(1.04);
+      }
+
+      .download:active {
+        transform: translateY(0);
+      }
+
+      .download:focus-visible {
+        outline: 3px solid var(--ring);
+        outline-offset: 3px;
+      }
+
+      .download svg {
+        width: 20px;
+        height: 20px;
+        flex: none;
+      }
+
+      .meta {
+        margin: 16px 0 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .meta .sep {
+        opacity: 0.5;
+        margin: 0 8px;
+      }
+
+      .updated {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.82rem;
+      }
+
+      .note {
+        margin: 22px auto 0;
+        max-width: 30rem;
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px 16px;
+        font-size: 0.85rem;
+        line-height: 1.55;
+        color: var(--muted);
+        text-align: left;
+      }
+
+      .note strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .reassure {
+        margin: 20px 0 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      footer {
+        text-align: center;
+        padding: 28px 24px 34px;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      footer a {
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      footer a:hover {
+        color: var(--text);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .download {
+          transition: none;
+        }
+        .download:hover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="assets/quantis-logo.svg" alt="Quantis" width="84" height="84" />
+      <h1>Quantis for Windows</h1>
+      <p class="tagline">The complete platform for UK contractors.</p>
+      <p class="disciplines">
+        Estimating, takeoff, quantity surveying and project delivery, in one place.
+      </p>
+
+      <div class="panel">
+        <a
+          class="download"
+          href="https://sbuatwyiqtzloxzljnfa.supabase.co/storage/v1/object/public/desktop-releases/Quantis-latest-setup.exe"
+          download
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M12 3v11m0 0 4-4m-4 4-4-4"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Download for Windows
+        </a>
+
+        <p class="meta">
+          <span id="version">Version 1.1.1</span>
+          <span class="sep">&middot;</span>Windows 10 and 11 (64-bit)
+          <span class="sep">&middot;</span>about 66 MB
+          <span class="updated" id="updated"></span>
+        </p>
+
+        <p class="reassure">Installs in seconds and updates itself automatically.</p>
+
+        <p class="note">
+          The first time you run the installer, Windows may show a
+          <strong>Windows protected your PC</strong> screen. Select
+          <strong>More info</strong>, then <strong>Run anyway</strong> to continue.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      &copy; SHIPP INTELLECTUAL PROPERTY LTD &middot;
+      <a href="https://contractgroup.co.uk">contractgroup.co.uk</a>
+    </footer>
+
+    <script>
+      // Show the live version and release date from the desktop updater feed.
+      // The download link itself is a stable URL, so a failed fetch just leaves
+      // the sensible defaults in place.
+      (function () {
+        var FEED =
+          "https://sbuatwyiqtzloxzljnfa.supabase.co/storage/v1/object/public/desktop-releases/latest.json";
+        fetch(FEED, { cache: "no-store" })
+          .then(function (r) {
+            return r.ok ? r.json() : null;
+          })
+          .then(function (data) {
+            if (!data) return;
+            if (data.version) {
+              document.getElementById("version").textContent =
+                "Version " + data.version;
+            }
+            if (data.pub_date) {
+              var d = new Date(data.pub_date);
+              if (!isNaN(d)) {
+                document.getElementById("updated").textContent =
+                  "Updated " +
+                  d.toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  });
+              }
+            }
+          })
+          .catch(function () {});
+      })();
+    </script>
+  </body>
+</html>
