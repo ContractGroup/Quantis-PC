@@ -19,7 +19,7 @@ never needs updating when a new version ships:
 | macOS disk image | `…/desktop-releases/Quantis-latest.dmg` |
 | Updater feed | `…/desktop-releases/latest.json` |
 
-Base URL: `https://sbuatwyiqtzloxzljnfa.supabase.co/storage/v1/object/public/`
+Base URL: `https://api.contractgroup.co.uk/storage/v1/object/public/`
 
 The page reads `latest.json` at load time to show the current version and date,
 and falls back to sensible defaults if that request fails.
